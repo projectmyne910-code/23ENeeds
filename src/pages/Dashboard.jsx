@@ -903,12 +903,19 @@ function Dashboard() {
               Explore Products →
             </a>
 
-            <br />
-            <br />
+              <br />
+              <br />
 
-            <a href="/cart">
-              🛒 View My Cart
-            </a>
+              <a href="/cart">
+                🛒 View My Cart
+              </a>
+
+              <br />
+              <br />
+
+              <a href="/orders">
+                📦 My Orders
+              </a>
           </div>
         )}
       </section>

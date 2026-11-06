@@ -8,6 +8,7 @@ import Category from './pages/Category'
 import Cart from './pages/Cart'
 import Checkout from './pages/Checkout'
 import AdminDashboard from "./pages/AdminDashboard";
+import Orders from "./pages/Orders";
 import './App.css'
 
 function App() {
@@ -47,12 +48,15 @@ useEffect(() => {
   if (window.location.pathname === '/admin') {
     return <AdminDashboard />
   }
+  if (window.location.pathname === '/orders') {
+    return <Orders />
+  }
   return (
     <div className="app">
       <header className="navbar">
         <a href="#home" className="logo">
           23ENeeDs<span>.</span>
-          <small>everything you need</small>
+          <small>everything you need ✨</small>
         </a>
 
         <nav>
