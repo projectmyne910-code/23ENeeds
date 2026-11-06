@@ -1,0 +1,144 @@
+
+.register-page {
+  min-height: 100vh;
+  padding: 35px 18px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #f3f7fc, #fff5df);
+}
+
+.register-card {
+  width: 100%;
+  max-width: 470px;
+  padding: 36px;
+  border: 1px solid #edf0f5;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 18px 55px #10274712;
+}
+
+.register-logo {
+  color: #102747;
+  font-size: 28px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.register-logo span {
+  color: #f5a623;
+}
+
+.register-tagline {
+  margin-top: 5px;
+  color: #78859a;
+  font-size: 12px;
+}
+
+.register-card h1 {
+  margin-top: 30px;
+  margin-bottom: 8px;
+  color: #102747;
+  font-size: 27px;
+}
+
+.register-intro {
+  margin-bottom: 25px;
+  color: #65738a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.role-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+  margin-bottom: 24px;
+}
+
+.role-options button {
+  min-height: 45px;
+  padding: 8px 5px;
+  border: 1px solid #d8dfeb;
+  border-radius: 8px;
+  background: white;
+  color: #526178;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.role-options button.role-active {
+  border-color: #102747;
+  background: #102747;
+  color: white;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.register-card label {
+  margin-top: 8px;
+  color: #27374d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.register-card input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d8dfeb;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 14px;
+}
+
+.register-card input:focus {
+  outline: 2px solid #f5a623;
+  outline-offset: 1px;
+}
+
+.register-submit {
+  margin-top: 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #f5a623;
+  color: #17243b;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.register-submit:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.register-message {
+  padding: 12px;
+  border-radius: 8px;
+  background: #edf4fc;
+  color: #244b70;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.register-footer {
+  margin-top: 25px;
+  text-align: center;
+  color: #65738a;
+  font-size: 13px;
+}
+
+.register-footer a {
+  color: #102747;
+  font-weight: 800;
+}
+
+@media (max-width: 420px) {
+  .register-card {
+    padding: 24px 18px;
+  }
+}

@@ -1,0 +1,272 @@
+
+.dashboard {
+  min-height: 100vh;
+  background: #f3f7fc;
+  color: #17243b;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 7%;
+  background: white;
+  border-bottom: 1px solid #e5eaf1;
+}
+
+.dashboard-logo {
+  color: #102747;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.dashboard-logo span {
+  color: #f5a623;
+}
+
+.logout-btn {
+  padding: 10px 18px;
+  border: 1px solid #d8dfeb;
+  border-radius: 8px;
+  background: white;
+  color: #102747;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 55px 24px;
+}
+
+.dashboard-eyebrow {
+  color: #bd7d0e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.dashboard-content h1 {
+  color: #102747;
+  font-size: clamp(28px, 5vw, 42px);
+}
+
+.dashboard-content h2 {
+  margin-top: 30px;
+  color: #102747;
+}
+
+.dashboard-content p {
+  line-height: 1.7;
+  color: #65738a;
+}
+
+.dashboard-notice,
+.dashboard-card {
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid #e5eaf1;
+  border-radius: 14px;
+  background: white;
+}
+
+.dashboard-notice strong {
+  color: #102747;
+}
+
+.dashboard-card a {
+  color: #9a650a;
+  font-weight: 700;
+}
+
+/* Vendor Dashboard */
+
+.vendor-content {
+  max-width: 1100px;
+}
+
+.vendor-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 35px 0;
+}
+
+.vendor-stat-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vendor-stat-card span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.vendor-stat-card strong {
+  color: #142b4c;
+  font-size: 30px;
+}
+
+.vendor-section {
+  background: #fff;
+  padding: 28px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  margin: 25px 0;
+}
+
+.vendor-section h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  color: #142b4c;
+}
+
+.vendor-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.vendor-product-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #263b59;
+  font-weight: 600;
+}
+
+.vendor-product-form input,
+.vendor-product-form textarea,
+.vendor-product-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  border: 1px solid #d5deea;
+  border-radius: 8px;
+  font: inherit;
+  background: #fff;
+}
+
+.vendor-product-form input:focus,
+.vendor-product-form textarea:focus,
+.vendor-product-form select:focus {
+  outline: 2px solid #f5a623;
+  border-color: #f5a623;
+}
+
+.vendor-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.vendor-product-form button {
+  padding: 14px 22px;
+  background: #142b4c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.vendor-product-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.vendor-image-preview {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.vendor-message {
+  padding: 12px 16px;
+  background: #fff7e6;
+  border-radius: 8px;
+  color: #805500;
+}
+
+.vendor-product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vendor-product-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.vendor-product-item > img,
+.vendor-product-placeholder {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 9px;
+  flex-shrink: 0;
+}
+
+.vendor-product-placeholder {
+  display: grid;
+  place-items: center;
+  background: #f1f5f9;
+  font-size: 30px;
+}
+
+.vendor-product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.vendor-product-details h3 {
+  margin: 0;
+  color: #142b4c;
+}
+
+.vendor-product-details p,
+.vendor-product-details small {
+  margin: 0;
+  color: #64748b;
+}
+
+.vendor-product-details strong {
+  color: #142b4c;
+}
+
+.vendor-toggle-btn {
+  padding: 10px 14px;
+  border: 1px solid #d5deea;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .vendor-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .vendor-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .vendor-product-item {
+    flex-wrap: wrap;
+  }
+}

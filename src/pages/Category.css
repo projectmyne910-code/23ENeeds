@@ -1,0 +1,141 @@
+
+.category-page {
+  min-height: 100vh;
+  padding: 45px 7%;
+  background: #f8f9fc;
+  color: #142b4e;
+}
+
+.category-back {
+  display: inline-block;
+  color: #142b4e;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 55px;
+}
+
+.category-back:hover {
+  color: #f5a21b;
+}
+
+.category-heading {
+  text-align: center;
+  padding: 35px 15px 65px;
+}
+
+.category-emoji {
+  display: block;
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.category-eyebrow {
+  color: #c78308;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.category-heading h1 {
+  font-size: clamp(38px, 5vw, 58px);
+  margin: 15px 0;
+}
+
+.category-heading p:last-child {
+  color: #68778f;
+  font-size: 18px;
+}
+
+.category-products {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.category-products h2 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.category-empty {
+  background: white;
+  border: 1px solid #e4eaf2;
+  border-radius: 20px;
+  padding: 55px 25px;
+  text-align: center;
+}
+
+.category-empty span {
+  font-size: 55px;
+}
+
+.category-empty h3 {
+  font-size: 23px;
+  margin: 18px 0 10px;
+}
+
+.category-empty p {
+  max-width: 520px;
+  margin: auto;
+  color: #68778f;
+  line-height: 1.7;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 24px;
+  margin-top: 25px;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #e4eaf2;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.product-image-placeholder {
+  height: 190px;
+  display: grid;
+  place-items: center;
+  background: #eef2f8;
+  font-size: 55px;
+}
+
+.product-info {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-info h3 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.product-info p {
+  color: #68778f;
+  font-size: 14px;
+  min-height: 35px;
+}
+
+.product-info strong {
+  color: #c78308;
+  font-size: 21px;
+}
+
+.product-info small {
+  color: #68778f;
+}
